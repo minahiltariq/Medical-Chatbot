@@ -1,0 +1,31 @@
+# LangChain
+langchain
+langchain-core
+langchain-classic
+langchain-community
+langchain-text-splitters
+
+# Hugging Face
+langchain-huggingface
+huggingface-hub
+transformers
+sentence-transformers
+
+# Vector Database
+faiss-cpu
+
+# PDF Loading
+pypdf
+
+# Groq
+langchain-groq
+
+# Streamlit
+streamlit
+
+# Environment Variables
+python-dotenv
+
+# Machine Learning
+numpy
+scikit-learn
