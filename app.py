@@ -12,11 +12,6 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 
-## Uncomment the following files if you're not using pipenv as your virtual environment manager
-#from dotenv import load_dotenv, find_dotenv
-#load_dotenv(find_dotenv())
-
-
 DB_FAISS_PATH="vectorstore/db_faiss"
 @st.cache_resource
 def get_vectorstore():
@@ -81,12 +76,7 @@ def main():
 
         Answer:
         """
-                
-        #HUGGINGFACE_REPO_ID="mistralai/Mistral-7B-Instruct-v0.3" # PAID
-        #HF_TOKEN=os.environ.get("HF_TOKEN")  
-
-        #TODO: Create a Groq API key and add it to .env file
-        
+      
         try: 
             vectorstore=get_vectorstore()
             if vectorstore is None:
@@ -127,11 +117,7 @@ def main():
                 'role': 'assistant',
                 'content': result
             })
-            #response="Hi, I am MediBot!"
-            # st.chat_message('assistant').markdown(result)
-            # st.session_state.messages.append({'role':'assistant', 'content': result})
-
-        except Exception as e:
+         except Exception as e:
             st.error(f"Error: {str(e)}")
 
 if __name__ == "__main__":
