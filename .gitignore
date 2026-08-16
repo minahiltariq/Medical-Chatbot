@@ -15,8 +15,8 @@ __pycache__/
 # Medical PDFs
 data/
 
-# FAISS vector database
-vectorstore/
+# # FAISS vector database
+# vectorstore/
 
 # Jupyter
 .ipynb_checkpoints/
