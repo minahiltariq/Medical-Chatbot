@@ -96,7 +96,7 @@ def main():
                 llm=ChatGroq(
                     model_name="llama-3.3-70b-versatile",
                     temperature=0.0,
-                    groq_api_key=os.environ["GROQ_API_KEY"],
+                    groq_api_key=st.secrets["GROQ_API_KEY"],
                 ),
                 chain_type="stuff",
                 retriever=vectorstore.as_retriever(search_kwargs={'k': 3}),
